@@ -138,7 +138,7 @@ html
     article
 
       section
-        h2 Node.js releases:
+        h2 Node.js Releases:
         h3 How do they work?
         h4 With your host
         h4
@@ -153,12 +153,12 @@ html
         img.headroom(src='images/me.jpg' alt='itsa me!' width='200px' height='200px')
       
       section
-        h3 I currently work at a small disruptive startup called IBM
-        h4 contributing to Node.js
+        h3 I am gainfully employed by Google as a Developer Advocate
+        h4 Focusing on the Node.js ecosystem and GCP
         
-        img(src='images/ibm.jpg' alt='Eye Bee M by Paul Rand')
+        img(src='images/gcp.png' alt='Google Cloud Platform' style='background-color:white;')
         
-        h5 The opinions expressed in this talk are solely my own
+        h5.headroom The opinions expressed in this talk are solely my own
       
       section(data-bespoke-backdrop='versions')
         h1 Versions, how do they work?
@@ -203,23 +203,20 @@ html
 
       section
         h2 Current:
-        h3 v7.2.0
+        h3 v8.1.4
         h2 Active LTS:
-        h3 v6.9.1 & v4.6.2
+        h3 v6.11.1
         h2 Maintenance LTS:
-        h3 v0.12.17
+        h3 v4.8.4
       
       section
-        h3 v0.10 is no longer maintained
+        h3 v0.10 and v0.12 are no longer maintained
         h2 💀👻💀
-        h3 v0.12 is end of life
-        h2 December 31
         h3 TIME TO UPGRADE!
 
       section(data-bespoke-backdrop='fork')
         h1 Some History of
         h2 where the heck v1 - v3 went
-        h3 and what the deal is with v0.12
 
       section
         h2 Node started with alternating releases
@@ -278,12 +275,13 @@ html
       section
         h3 We maintain
         h2 release branches
-        h3 v0.12.x, v4.x, v6.x, and v7.x
+        h3 v4.x, v6.x, and v8.x
+        h4 They are 🔓'd
 
       section
         h3 We also maintain
         h2 staging branches
-        h3 v0.12.x-staging, v4.x-staging, v6.x-staging, v7.x-staging
+        h3 v4.x-staging, v6.x-staging, v8.x-staging
         h4 Used to stage changes as they are audited
       
       section
@@ -295,7 +293,7 @@ html
       
       section
         h1 When we are ready for a release
-        h3 We branch off of v4.x, v6.x, or v7.x
+        h3 We branch off of v4.x, v6.x, or v8.x
         h3 And cherry pick commits from staging
 
       section
@@ -387,16 +385,17 @@ html
         h1 So Which Version Should You Use?
       
       section
-        h3 <b>v4.x</b> has had a while on LTS to stabilize
-        h3 <b>v6.x</b> has been LTS for a month and is getting ready for a third release
-        h3 <b>v7.x</b> is always getting the latest and greatest
+        h3 <b>v4.x</b> is going to be EOL next april
+        h3 <b>v6.x</b> is pretty stable!
+        h3 <b>v8.x</b> is that new freshness 🎉
         
       section
         h2 Why use v4.x?
         ul
           li.hide
-          li hardened by ongoing LTS release process
+          li you cannot afford to upgrade
           li you already have an app in production that is working
+          li it is kinda time to upgrade though
           
 
       section
@@ -405,7 +404,7 @@ html
           li.hide
           li Longest support cycle of LTS releases
           li closest to master of LTS releases
-          li V8 5.1 🎉
+          li all those es features
           li Inspector API 🔎
 
       section
@@ -415,13 +414,15 @@ html
         h1 Nope!
 
       section
-        h2 Why use v7.x
+        h2 Why use v8.x
         ul
           li.hide
-          li V8 5.4
-          li A little bit of es2016
+          li V8 5.8 (soon to be 6.0)
+          li Async / Await
+          li Turbofan + Ignition
           li Latest and Greatest
           li Using this in production scares me
+          li It will become LTS in October
       
       section
         h2 Be prepared for breakages
